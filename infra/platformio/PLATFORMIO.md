@@ -26,7 +26,7 @@ exec /usr/local/bin/platformio: exec format error
 #
 
 #
-# Lucky threy left us a dockerfile
+# Lucky they left us a dockerfile
 #
 
 ```
