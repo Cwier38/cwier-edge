@@ -1,5 +1,0 @@
-http.host: "0.0.0.0"
-xpack.monitoring.elasticsearch.hosts: [ "http://81.169.162.110:9200" ]
-
-path.logs: /usr/share/logstash/logs
-pipeline.separate_logs: true

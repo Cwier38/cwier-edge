@@ -1,0 +1,6 @@
+#
+# WireGuard
+#
+
+Easy WG
+
