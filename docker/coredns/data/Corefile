@@ -1,0 +1,23 @@
+.:53 {
+    forward . 8.8.8.8
+    log
+    errors
+    cache {
+        success 5000
+        denial 2500
+    }
+}
+
+cwier.local:53 {
+    file /root/db.cwier.local
+    log
+    errors
+}
+
+168.192.in-addr.arpa {
+    file /root/db.192.168      168.192.in-addr.arpa
+    log
+    errors
+}
+
+

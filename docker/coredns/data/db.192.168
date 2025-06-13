@@ -1,0 +1,45 @@
+$TTL    604800
+@    IN    SOA    ns.cwier.local. ns.belni.nl. (
+         2025050101        ; Serial
+             604800        ; Refresh
+              86400        ; Retry
+            2419200        ; Expire
+             604800 )    ; Negative Cache TTL
+;
+
+; name servers - NS records
+
+@   IN    NS    ns.cwier.local.
+
+; PTR records
+
+40.50     IN  PTR router.cwier.local.
+
+11.60     IN  PTR node11.belni.local.
+12.60     IN  PTR node12.belni.local.
+13.60     IN  PTR node13.belni.local.
+14.60     IN  PTR node14.belni.local.
+15.60     IN  PTR node15.belni.local.
+16.60     IN  PTR node16.belni.local.
+17.60     IN  PTR node17.belni.local.
+18.60     IN  PTR node18.belni.local.
+19.60     IN  PTR node19.belni.local.
+21.60     IN  PTR node21.belni.local.
+22.60     IN  PTR node22.belni.local.
+23.60     IN  PTR node23.belni.local.
+24.60     IN  PTR node24.belni.local.
+25.60     IN  PTR node25.belni.local.
+26.60     IN  PTR node26.belni.local.
+31.60     IN  PTR node31.belni.local.
+32.60     IN  PTR node32.belni.local.
+33.60     IN  PTR node33.belni.local.
+34.60     IN  PTR node34.belni.local.
+35.60     IN  PTR node35.belni.local.
+36.60     IN  PTR node36.belni.local.
+41.60     IN  PTR node41.belni.local.
+42.60     IN  PTR node42.belni.local.
+43.60     IN  PTR node43.belni.local.
+44.60     IN  PTR node44.belni.local.
+45.60     IN  PTR node45.belni.local.
+46.60     IN  PTR node46.belni.local.
+

@@ -1,0 +1,9 @@
+{
+    "metrics-addr": "192.168.1.40:9323",
+    "log-driver": "json-file",
+    "log-opts": {
+        "max-size": "25m",
+        "max-file": "5",
+        "compress": "true"
+    }
+}
