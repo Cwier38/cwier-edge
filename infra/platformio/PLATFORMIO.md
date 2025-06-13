@@ -6,7 +6,7 @@
 # The board i use is this one:
 #
 
-https://www.wemos.cc/en/latest/_images/d1_mini_v4.0.0_1_16x16.png
+![Alt text](https://www.wemos.cc/en/latest/_images/d1_mini_v4.0.0_1_16x16.png "Wemos D1 Mini")
 
 https://www.wemos.cc/en/latest/d1/d1_mini.html
 
