@@ -12,6 +12,19 @@ https://www.wemos.cc/en/latest/d1/d1_mini.html
 
 
 #
+# Pins
+#
+
+   blue,   TX Wemos,   RX Uart0 Back
+   yellow, RX Wemos,   TX Uart0 Back
+   black,  GND Wemom,  GND Blade
+   red,    5V Wemos,   5V Blade
+
+![Uart Back] (https://docs.computeblade.com/img/hardware/uart-back.svg "UART0 Back")
+
+#
+#
+#
 # Run our docker container
 #
 
@@ -77,11 +90,25 @@ pkg install -l Wire -p espressif8266
 # platformio run --target upload
 #
 ```
-docker run --rm     --name platformio     -v /infra/platformio/config:/.platformio     -v /infra/platformio/data:/workspace   -u `id -u $USER`:`id -g $USER`   --device=/dev/ttyS0     cwier/docker-platformio-core:v6.1.7  run -t upload
+docker run --rm \
+    --name platformio \
+    -v /infra/platformio/config/:/.platformio \
+    -u `id -u $USER`:`id -g $USER` \
+    -v /infra/platformio/data:/workspace \
+    --device=/dev/ttyS0 \
+    cwier/docker-platformio-core:v6.1.7 \
+    run -t upload
 
 ##
 ## platformio device monitor -p /dev/ttyACM0
 ## 
 ```
-docker run --rm     --name platformio     -v /infra/platformio/config:/.platformio     -v /infra/platformio/data:/workspace   -u `id -u $USER`:`id -g $USER`   --device=/dev/ttyS0     cwier/docker-platformio-core:v6.1.7  device monitor -p /dev/ttyACM0
+docker run --rm \
+    --name platformio \
+    -v /infra/platformio/config/:/.platformio \
+    -u `id -u $USER`:`id -g $USER` \
+    -v /infra/platformio/data:/workspace \
+    --device=/dev/ttyS0 \
+    cwier/docker-platformio-core:v6.1.7 \
+    device monitor -p /dev/ttyACM0
 ```
